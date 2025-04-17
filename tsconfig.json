@@ -1,5 +1,30 @@
 {
-  "extends": "@tomjs/tsconfig/vue.json",
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "vue config",
+  "compilerOptions": {
+    // node
+    "lib": [
+      "ESNext"
+    ],
+    "module": "ESNext",
+    "target": "ES2021",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "Node",
+    "noImplicitAny": false,
+    "resolveJsonModule": true,
+    // web
+  },
+  "include": [
+    // web
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    // node
+    "extension",
+    "vite.config.ts"
+  ]
 }
