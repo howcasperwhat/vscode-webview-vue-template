@@ -9,6 +9,7 @@
     "url": "https://github.com/howcasperwhat/vscode-webview-vue-template.git"
   },
   "main": "dist/extension/index.js",
+  "icon": "assets/logo.png",
   "engines": {
     "node": ">=18",
     "vscode": "^1.75.0"
@@ -30,7 +31,8 @@
     "update": "vscode-ext-gen --output extension/generated/meta.ts",
     "vscode:prepublish": "npm run build",
     "pack": "vsce package",
-    "publish": "vsce publish"
+    "publish": "vsce publish",
+    "prepare": "npm run update"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.12.0",
