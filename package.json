@@ -1,9 +1,9 @@
 {
-  "publisher": "tomjs-test",
-  "name": "template-vue",
+  "publisher": "vscode-webview-vue-template.publisher",
+  "name": "vscode-webview-vue-template.name",
   "version": "0.0.0",
   "private": true,
-  "description": "vite + vue",
+  "description": "vscode-webview-vue-template.description",
   "main": "dist/extension/index.js",
   "engines": {
     "node": ">=18",
@@ -13,8 +13,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "hello-world.showHelloWorld",
-        "title": "Hello World: Show"
+        "command": "vscode-webview-vue-template.show",
+        "title": "Webview Vue: Show"
       }
     ]
   },
@@ -22,7 +22,8 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "update": "vscode-ext-gen --output extension/generated/meta.ts"
   },
   "dependencies": {
     "@vscode/webview-ui-toolkit": "^1.4.0",
@@ -37,6 +38,7 @@
     "@types/vscode-webview": "^1.57.5",
     "@vitejs/plugin-vue": "^5.2.3",
     "eslint": "^9.24.0",
-    "jiti": "^2.4.2"
+    "jiti": "^2.4.2",
+    "vscode-ext-gen": "^1.0.2"
   }
 }
