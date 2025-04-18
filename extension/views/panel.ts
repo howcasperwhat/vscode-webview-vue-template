@@ -21,11 +21,17 @@ export class MainPanel {
       MainPanel.currentPanel._panel.reveal(ViewColumn.One)
     }
     else {
-      const panel = window.createWebviewPanel('show', 'Webview Vue Title', ViewColumn.One, {
-        enableScripts: true,
-      })
-
-      MainPanel.currentPanel = new MainPanel(panel, context)
+      MainPanel.currentPanel = new MainPanel(
+        window.createWebviewPanel(
+          'show',
+          'Webview Vue Title',
+          ViewColumn.One,
+          {
+            enableScripts: true,
+          },
+        ),
+        context,
+      )
     }
     MainPanel.currentPanel._panel.webview.postMessage({ type: 'show', data: 'Message Data' })
   }

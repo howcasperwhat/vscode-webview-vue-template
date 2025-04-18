@@ -1,10 +1,10 @@
 <br>
 
-<h1 align="center">vscode-webview-vue-template.title</h1>
+<h1 align="center">vscode-webview-vue-template-title</h1>
 
 ## Introduction
 
-vscode-webview-vue-template.description
+vscode-webview-vue-template-description
 
 ## Feature
 
