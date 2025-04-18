@@ -1,9 +1,10 @@
 import { defineExtension, useCommand } from 'reactive-vscode'
-import { MainPanel } from './views/panel'
+import { Panel } from './panel'
 
 const { activate, deactivate } = defineExtension((context) => {
   useCommand('vscode-webview-vue-template.show', () => {
-    MainPanel.render(context)
+    const panel = new Panel(context)
+    panel.render()
   })
 })
 
