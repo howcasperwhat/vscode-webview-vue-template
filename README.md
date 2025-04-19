@@ -9,7 +9,7 @@ vscode-webview-vue-template-description
 ## Feature
 
 <p align="center">
-<img src="https://vscode-webview-vue-template.png?raw=true" alt="feature" />
+<img src="https://github.com/howcasperwhat/vscode-webview-vue-template/blob/main/assets/logo.png?raw=true" alt="feature" width="120"/>
 </p>
 
 ## Usage
