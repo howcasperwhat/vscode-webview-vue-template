@@ -13,7 +13,9 @@ export class Panel {
       { enableScripts: true },
     )
     this.panel.webview.html = __getWebviewHtml__({
-      serverUrl: import.meta.env.VITE_DEV_SERVER_URL,
+      // DO NOT FIX THIS!
+      // eslint-disable-next-line node/prefer-global/process
+      serverUrl: process.env.VITE_DEV_SERVER_URL,
       webview: this.panel.webview,
       context,
     })
