@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     // node
-    "target": "ES2021",
+    "target": "ESNext",
     "lib": [
       "ESNext"
     ],
@@ -17,12 +17,12 @@
     // web
   },
   "include": [
+    // node
+    "extension",
+    "vite.config.ts",
     // web
     "src/**/*.ts",
     "src/**/*.d.ts",
-    "src/**/*.vue",
-    // node
-    "extension",
-    "vite.config.ts"
+    "src/**/*.vue"
   ]
 }

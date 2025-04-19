@@ -1,17 +1,17 @@
-import vscode from '@tomjs/vite-plugin-vscode'
-import vue from '@vitejs/plugin-vue'
+import VSCode from '@tomjs/vite-plugin-vscode'
+import Vue from '@vitejs/plugin-vue'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
   plugins: [
-    vue({
+    Vue({
       template: {
         compilerOptions: {
           isCustomElement: (tag: string) => tag.startsWith('vscode-'),
         },
       },
     }),
-    vscode({
+    VSCode({
       webview: {},
     }),
   ],
